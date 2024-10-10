@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({super.key, required this.onSelectScreen});
+
   final void Function(String identifier) onSelectScreen;
 
   @override
@@ -33,11 +34,11 @@ class MainDrawer extends StatelessWidget {
                 ),
                 const SizedBox(width: 18),
                 Text(
-                  'Cooking up!',
+                  'Cooking Up!',
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
                         color: Theme.of(context).colorScheme.primary,
                       ),
-                )
+                ),
               ],
             ),
           ),
